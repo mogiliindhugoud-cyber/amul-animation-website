@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function getFrameUrl(index) {
         const frameNum = String(index).padStart(3, '0');
-        return `/images/ezgif-frame-${frameNum}.jpg`;
+        return `/image/ezgif-frame-${frameNum}.jpg`;
     }
 
     // Preload all frames
