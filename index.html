@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amul Kool Gold | Exotic Rose Refreshment</title>
+    <meta name="description" content="Experience the rich legacy of Amul through a beautiful scroll-driven animation website exploring the pure goodness of India's favorite dairy.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&amp;family=Plus+Jakarta+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind CSS CDN and Configuration -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e9e1dc",
+                        "inverse-surface": "#34302c",
+                        "on-primary-container": "#fffbff",
+                        "tertiary-fixed-dim": "#d7c1c8",
+                        "secondary-container": "#fed488",
+                        "on-secondary-container": "#785a1a",
+                        "tertiary-container": "#827077",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#f8efea",
+                        "surface-container": "#f5ece7",
+                        "on-surface": "#1e1b18",
+                        "secondary": "#775a19",
+                        "on-secondary-fixed": "#261900",
+                        "tertiary": "#69575e",
+                        "background": "#fff8f5",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#25181e",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#efe6e2",
+                        "on-background": "#1e1b18",
+                        "primary-fixed-dim": "#ffb2be",
+                        "on-tertiary-container": "#fffbff",
+                        "on-primary-fixed": "#400014",
+                        "on-tertiary-fixed-variant": "#524249",
+                        "surface-dim": "#e1d8d4",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#5b3f43",
+                        "primary-fixed": "#ffd9de",
+                        "inverse-primary": "#ffb2be",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#fff8f5",
+                        "outline-variant": "#e4bdc2",
+                        "surface-container-low": "#fbf2ed",
+                        "primary-container": "#e2165f",
+                        "primary": "#b80049",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "secondary-fixed-dim": "#e9c176",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#bc004b",
+                        "surface-container-highest": "#e9e1dc",
+                        "surface": "#fff8f5",
+                        "on-primary-fixed-variant": "#900038",
+                        "secondary-fixed": "#ffdea5",
+                        "tertiary-fixed": "#f4dce4",
+                        "error-container": "#ffdad6",
+                        "outline": "#8f6f73"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "xs": "4px",
+                        "base": "8px",
+                        "sm": "12px",
+                        "margin-desktop": "auto",
+                        "lg": "48px",
+                        "xl": "80px",
+                        "margin-mobile": "16px",
+                        "md": "24px"
+                    },
+                    "fontFamily": {
+                        "label-bold": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Bricolage Grotesque"],
+                        "display-lg": ["Bricolage Grotesque"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Bricolage Grotesque"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "label-bold": ["14px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <!-- Premium Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader-logo">AMUL<span>.</span><span class="logo-tag">Mascot</span></div>
+        <div class="loader-container">
+            <div class="loader-bar" id="loader-bar"></div>
+        </div>
+        <div class="loader-text" id="loader-text">Loading Experience 0%</div>
+    </div>
+
+    <!-- Transparent Top Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md border-b border-white/10 transition-all duration-300" id="top-nav">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-margin-mobile md:px-gutter py-4">
+            <span class="font-display-lg text-2xl md:text-3xl text-primary tracking-tight font-bold cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Amul Kool Gold</span>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="font-label-bold text-label-bold text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer" onclick="document.getElementById('journey').scrollIntoView({behavior: 'smooth'})">Journey</a>
+                <a class="font-label-bold text-label-bold text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">Features</a>
+                <a class="font-label-bold text-label-bold text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer" onclick="document.getElementById('details').scrollIntoView({behavior: 'smooth'})">Product</a>
+                <a class="font-label-bold text-label-bold text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer" onclick="document.getElementById('gallery').scrollIntoView({behavior: 'smooth'})">Gallery</a>
+            </div>
+            <button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-bold text-label-bold hover:opacity-90 active:scale-95 transition-all shadow-md rose-glow" onclick="document.getElementById('cta-section').scrollIntoView({behavior: 'smooth'})">Order Now</button>
+        </div>
+    </nav>
+    
+    <!-- Main Content Container -->
+    <main>
+        <!-- Interactive Journey (Scroll Animation) -->
+        <section class="animation-section" id="journey">
+            <div class="sticky-wrapper">
+                <!-- Canvas Element -->
+                <canvas id="animation-canvas"></canvas>
+                
+                <!-- Vignette Overlay -->
+                <div class="canvas-overlay"></div>
+
+                <!-- Scroll Hero Text Overlay -->
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center z-10 pointer-events-none px-4" id="scroll-hero-text">
+                    <h1 class="font-display-lg text-6xl md:text-8xl text-primary tracking-tight mb-4 drop-shadow-sm">
+                        Amul cool
+                    </h1>
+                    <p class="font-body-lg text-lg md:text-2xl text-secondary font-bold tracking-wider uppercase">
+                        The taste of India
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Bento Grid -->
+        <section class="py-xl px-margin-mobile md:px-gutter max-w-7xl mx-auto" id="features">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+                <div class="bg-surface-container-low p-md rounded-xl border border-outline-variant/20 hover:border-primary/30 transition-all">
+                    <div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center mb-md">
+                        <span class="material-symbols-outlined text-primary" data-icon="water_drop">water_drop</span>
+                    </div>
+                    <h3 class="font-headline-lg text-headline-lg mb-sm">Pure Goodness</h3>
+                    <p class="font-body-md text-on-surface-variant">Made with 100% real fresh milk sourced directly from the finest dairies, ensuring a rich and creamy texture in every sip.</p>
+                </div>
+                <div class="bg-surface-container-low p-md rounded-xl border border-outline-variant/20 hover:border-primary/30 transition-all">
+                    <div class="w-12 h-12 bg-secondary-fixed rounded-lg flex items-center justify-center mb-md">
+                        <span class="material-symbols-outlined text-secondary" data-icon="local_florist">local_florist</span>
+                    </div>
+                    <h3 class="font-headline-lg text-headline-lg mb-sm">Exotic Flavor</h3>
+                    <p class="font-body-md text-on-surface-variant">Infused with natural rose extracts to deliver an authentic, aromatic floral experience that lingers beautifully on the palate.</p>
+                </div>
+                <div class="bg-surface-container-low p-md rounded-xl border border-outline-variant/20 hover:border-primary/30 transition-all">
+                    <div class="w-12 h-12 bg-tertiary-fixed rounded-lg flex items-center justify-center mb-md">
+                        <span class="material-symbols-outlined text-tertiary" data-icon="ac_unit">ac_unit</span>
+                    </div>
+                    <h3 class="font-headline-lg text-headline-lg mb-sm">Instant Chill</h3>
+                    <p class="font-body-md text-on-surface-variant">Designed to be served ice-cold, it's the ultimate companion for hot summer days, providing immediate refreshment and energy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Showcase / Nutritional Detail -->
+        <section class="py-xl bg-surface-container-high relative overflow-hidden" id="details">
+            <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter grid md:grid-cols-2 gap-xl items-center">
+                <div class="order-2 md:order-1">
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+                        <img class="w-full h-[500px] object-cover" data-alt="A professional studio product shot of a glass filled with pink rose flavored milk with ice cubes, surrounded by soft pink rose petals and golden aesthetic lighting, captured in a high-end commercial photography style with soft bokeh background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAasdjEVujjabQ8xxDY1UPm14GJjVAnPrm2WhqJHiTWjk0plNJ3QLscwOgeflILTdIBqHHcYVtprNbLQFBblSujaExr9exMYw36fEF9L4UYR88Ij8cQn9PkpHIW8bDikhTrYQ3Vh75dmr77sZSzTbPop1v9iGntoRJ8BtNjahDdK7JkzhL1LbY4CAwKorC04RjNjwwFlbMPd7g6068AZgq_wgdXjPfPkA3UaHTy1FUhnbg_-TYBpvQV5A"/>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 space-y-md">
+                    <h2 class="font-display-lg text-headline-lg text-on-surface">The <span class="text-secondary">Gold</span> Standard of Dairy</h2>
+                    <p class="font-body-lg text-on-surface-variant">Amul Kool Gold represents the pinnacle of flavored milk technology. We've balanced nutritional value with an uncompromising taste profile.</p>
+                    <ul class="space-y-sm">
+                        <li class="flex items-start gap-sm">
+                            <span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle">check_circle</span>
+                            <div>
+                                <span class="font-label-bold text-label-bold block">Rich in Calcium</span>
+                                <span class="text-body-md text-on-surface-variant">Essential for bone health and daily vitality.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-sm">
+                            <span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle">check_circle</span>
+                            <div>
+                                <span class="font-label-bold text-label-bold block">Natural Sweeteners</span>
+                                <span class="text-body-md text-on-surface-variant">Perfectly balanced sweetness without artificial aftertaste.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-sm">
+                            <span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle">check_circle</span>
+                            <div>
+                                <span class="font-label-bold text-label-bold block">UHT Processed</span>
+                                <span class="text-body-md text-on-surface-variant">Maximum safety and longer shelf life without preservatives.</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="flex gap-sm">
+                        <span class="bg-secondary text-white px-4 py-1 rounded-full text-xs font-bold">PREMIUM QUALITY</span>
+                        <span class="bg-primary text-white px-4 py-1 rounded-full text-xs font-bold">BEST SELLER</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lifestyle Section -->
+        <section class="py-xl px-margin-mobile md:px-gutter max-w-7xl mx-auto" id="gallery">
+            <div class="text-center mb-lg">
+                <h2 class="font-display-lg text-headline-lg mb-sm">Refresh Your Lifestyle</h2>
+                <p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">From afternoon pick-me-ups to evening celebrations, Amul Kool Gold fits perfectly into your most vibrant moments.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-md h-[600px]">
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg animate-fade-in">
+                    <img alt="Amul Kool Gold bottle standing elegantly in a blooming rose garden" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDbAcN1mAK_m-lqyl7SPM7-mJdEsFhmsdfJ-sqmnVgjuYqSn-JrhnsH9YqmKMZ2Y5nDEcfUz05qhHLtQY8MV-iY4-f3o280NvyaaB9_9TvIJI0z3nnYl_EzorHm-UGO06Xkm__calgP38vf8dc6COt4Oqof0yf7xDrgJZXFUfdyoqfkj7eqzZpsSCaoJ8d6lOUMlduzoaKJovHNtznwtWGnjbW96twXggzXAVxd70s5AOLAo8tD0tSoQ"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-md">
+                        <p class="text-white font-label-bold text-label-bold">Outdoor Refreshment</p>
+                    </div>
+                </div>
+                <div class="grid grid-rows-2 gap-md">
+                    <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                        <img alt="Pink rose-flavored milk drink in a crystal glass garnished with petals" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl7ygvHTsinEMuxkVB_tWTVRs6P5uH9vrXRYLq_qDbpIAEyofmkbeaOWCEcNF6QR9_0Ell9TqmWpS_hlQAmPF8clSlSzajXeRlxpcR6m4ymOZnoI6401RzukIdFCspx3VG9tdFtYAu4kmV9q0LgbC9Tg6se3RawD5TyZLrZDv9uFajVtNvBU0eKoGH4RjVNhHq9wk9ONVh1ElFvwvyurgmgm1fDT5dtkoWc3UClwLaF5lelu84MH1C-Q"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-md">
+                            <p class="text-white font-label-bold text-label-bold">The Perfect Companion</p>
+                        </div>
+                    </div>
+                    <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                        <img alt="Amul Kool Gold rose milk on a marble table with fresh roses" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_ReJZY6gifq5Nb0aCTW1alHd-OmgrznfnwA9IsL8tTVtGpu_GTiU5RWLAIXXs2O7rTgH_8n7JX_p304Yn5QqqHEOsZ5bs-ap3fz5HwNWgvgyBaKHIWTnj3UJaHROL1Pgc2584934wCfhC1RriXkcPiYCiZc35jAh4sCpZiMrAwHJjXJ-8kDBmBGCUWKEdq_Gw8cSseKlLwl81AV2zFiCi46cxWNXI9oxtAwxxG61ab-RA3BJ3J7iBrA"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-md">
+                            <p class="text-white font-label-bold text-label-bold">Elevated Snacking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-xl mb-xl" id="cta-section">
+            <div class="max-w-5xl mx-auto px-margin-mobile md:px-gutter bg-primary text-on-primary rounded-3xl p-xl text-center relative overflow-hidden shadow-2xl">
+                <!-- Abstract Design Elements -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32"></div>
+                <div class="absolute bottom-0 left-0 w-48 h-48 bg-secondary/20 rounded-full -ml-24 -mb-24"></div>
+                <div class="relative z-10 space-y-md">
+                    <h2 class="font-display-lg text-headline-lg">Ready to Experience the Gold?</h2>
+                    <p class="text-body-lg opacity-90 max-w-xl mx-auto">Find Amul Kool Gold Rose Flavor at your nearest retail store or order online for doorstep delivery.</p>
+                    <div class="flex flex-col sm:flex-row gap-md justify-center pt-md">
+                        <button class="bg-white text-primary px-xl py-4 rounded-full font-label-bold text-label-bold hover:bg-surface-container-low transition-all flex items-center justify-center gap-base">
+                            <span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+                            Find a Store Nearby
+                        </button>
+                        <button class="bg-secondary text-white px-xl py-4 rounded-full font-label-bold text-label-bold hover:opacity-90 transition-all">
+                            Order Online Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-container-highest py-xl">
+        <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter flex flex-col md:flex-row justify-between items-center gap-md">
+            <div class="text-center md:text-left">
+                <span class="font-display-lg text-headline-lg text-primary tracking-tight block mb-xs">Amul Kool Gold</span>
+                <p class="font-body-md text-on-surface-variant">© 2024 Amul Kool Gold. All rights reserved.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-md">
+                <a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Privacy Policy</a>
+                <a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Terms of Service</a>
+                <a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Nutritional Info</a>
+                <a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Sustainability</a>
+            </div>
+            <div class="flex gap-md">
+                <a class="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+                    <span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+                </a>
+                <a class="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+                    <span class="material-symbols-outlined text-sm" data-icon="mail">mail</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP & ScrollTrigger from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <!-- Main Script -->
+    <script src="main.js"></script>
+
+    <!-- Interactive script from code.html -->
+    <script>
+        document.querySelectorAll('.material-symbols-outlined').forEach(icon => {
+            icon.addEventListener('mouseenter', () => {
+                icon.style.fontVariationSettings = "'FILL' 1";
+            });
+            icon.style.cursor = 'pointer';
+            icon.addEventListener('mouseleave', () => {
+                icon.style.fontVariationSettings = "'FILL' 0";
+            });
+        });
+    </script>
+</body>
+</html>
